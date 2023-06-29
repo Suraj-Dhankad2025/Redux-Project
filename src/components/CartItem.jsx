@@ -1,13 +1,13 @@
 import { MdDelete } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { remove  } from '../redux/slices/CartSlice';
-import  Toast  from "react-hot-toast";
+import  {toast}  from "react-hot-toast";
 const CartItem = ({ item, itemIndex }) => {
 
   const dispatch = useDispatch();
   const removeFromCart=()=>{
     dispatch(remove(item.id));
-    Toast.success("Item Removed");
+    toast.success("Item Removed");
   }
   return (
     <div>
@@ -25,7 +25,7 @@ const CartItem = ({ item, itemIndex }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };

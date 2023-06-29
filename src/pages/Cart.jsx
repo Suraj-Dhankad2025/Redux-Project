@@ -14,6 +14,7 @@ const Cart = () => {
     cart.length>0?
     (
       <div>
+      console.log(typeof cart);
       <div>
         {
           cart.map((item, index)=>{

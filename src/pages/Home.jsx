@@ -30,9 +30,9 @@ const Home = () => {
       (
         <div>
           {
-            posts.map((post)=>{
+            posts.map((post)=>(
               <Product key={post.id} post={post}/>
-            })
+            ))
           }
         </div>
       ):
